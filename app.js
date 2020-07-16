@@ -112,3 +112,35 @@ let myNameTwo = 'Tanner';
 setTimeout(function() {
     printName(myNameTwo);
 }, 5000);
+
+
+//ITERATORS
+
+//For Each
+const collectables = ["Bomag", "CMI Corp", "Wirtgen", "Catepillar"];
+
+collectables.forEach(function(element) {
+    console.log(element);
+});
+
+//or
+// collectables. forEach(element => {
+    // if (element.length > 6) {
+//    console.log(element);
+//  }
+//});
+
+// MAP
+const someNumbers = [23, 65, 347, 34];
+
+const addFive = someNumbers.map(element => {
+    return element + 5;
+});
+console.log(addFive);
+
+//filter
+someNumbers.filter(element => {
+    if (element > 50) {
+        return element;
+    }
+});
