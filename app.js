@@ -47,10 +47,12 @@ function calculator(num1, num2, callbackOne, callbackTwo) {
 
 function addNumbers(num1, num2) {
     let result = num1 + num2;
+    return result;
 }
 
 function subtractNumbers(num1, num2) {
-    let result = num1 + num2;
+    let result = num1 - num2;
+    return result;
 }
 
 console.log(calculator(5,77, addNumbers, subtractNumbers));
