@@ -102,3 +102,13 @@ function nameTimer() {
     console.log("Tanner!");
 }
 setTimeout(nameTimer, 5000);
+
+//other option
+
+function printName(name) {
+    console.log(name);
+}
+let myNameTwo = 'Tanner';
+setTimeout(function() {
+    printName(myNameTwo);
+}, 5000);
